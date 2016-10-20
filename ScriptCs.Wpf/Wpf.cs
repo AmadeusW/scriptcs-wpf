@@ -73,8 +73,8 @@ namespace ScriptCs.Wpf
 
             _threadManager.RunInSTA(() =>
             {
-                var view = _xamlLoader.LoadXaml(xamlFile);
-                _applicationLauncher.CreateAndRunApplication(view, viewModel);
+                //var view = _xamlLoader.LoadXaml(xamlFile);
+                _applicationLauncher.CreateAndRunApplication(null, viewModel);
             });
         }
     }

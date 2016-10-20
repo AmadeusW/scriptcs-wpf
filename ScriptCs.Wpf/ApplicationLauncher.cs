@@ -9,11 +9,11 @@ namespace ScriptCs.Wpf
     {
         public void CreateAndRunApplication(DependencyObject view, object viewModel)
         {
-            if (view == null) throw new ArgumentNullException("view");
+            //if (view == null) throw new ArgumentNullException("view");
 
             var mainWindow = new Window
             {
-                Content = view,
+                Content = new AutoControl(),
                 DataContext = viewModel,
                 SizeToContent = SizeToContent.WidthAndHeight
             };
